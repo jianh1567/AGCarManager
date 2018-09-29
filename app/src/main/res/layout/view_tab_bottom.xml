@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="210px"
+              android:background="@drawable/bg_tab"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.wind.carmanager.widget.BottomTabItem
+                android:id="@+id/tab_vehicle_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabImageSelected="@drawable/tab_vehicle_condition_selected"
+                app:tabImageUnSelected="@drawable/tab_vehicle_condition"
+                app:tabText="@string/tab_vehicle_condition"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.wind.carmanager.widget.BottomTabItem
+                android:id="@+id/tab_electric_fence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabImageSelected="@drawable/tab_electric_fence_selected"
+                app:tabImageUnSelected="@drawable/tab_electric_fence"
+                app:tabText="@string/tab_electric_fence"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.wind.carmanager.widget.BottomTabItem
+                android:id="@+id/tab_car_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabImageSelected="@drawable/tab_car_control_selected"
+                app:tabImageUnSelected="@drawable/tab_car_control"
+                app:tabText="@string/tab_car_control"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.wind.carmanager.widget.BottomTabItem
+                android:id="@+id/tab_mine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabImageSelected="@drawable/tab_mine_selected"
+                app:tabImageUnSelected="@drawable/tab_mine"
+                app:tabText="@string/tab_mine"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

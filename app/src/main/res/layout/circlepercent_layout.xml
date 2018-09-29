@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+   <com.wind.carmanager.widget.CirclePercentBar
+       android:id="@+id/circle_bar"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       app:arcWidth="10px"
+       app:circleRadius="150px"
+       app:centerTextSize="40px"
+       app:arcColor="@color/list_item_desc"
+       app:centerTextColor="@color/colorAccent"
+       app:arcStartColor="@android:color/holo_green_light"/>
+
+</RelativeLayout>

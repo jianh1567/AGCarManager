@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2f2f35</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#0048b4</color>
+    <color name="yellow">#aa8228</color>
+    <color name="gray">#464646</color>
+    <color name="red">#FF0000</color>
+    <color name="light_gray">#F8F8F8</color>
+
+    <color name="system_bar_bg">#008EEF</color>
+
+    <color name="cancel_bg">#F4F4F4</color>
+    <color name="sure_bg">#0084FE</color>
+
+    <!-- 围栏覆盖物颜色 -->
+    <color name="server_fence">#FF0601</color>
+    <color name="local_fence">#2319DC</color>
+
+    <color name="layout_title">#008EEF</color>
+
+    <color name="list_item_title">#333333</color>
+    <color name="list_item_desc">#666666</color>
+    <color name="list_divide_line">#E1E1E1</color>
+    <color name="list_bg">#F6F6F6</color>
+
+    <!-- 对话框分割线 -->
+    <color name="dialog_divide_line">#343339</color>
+
+    <!-- 对话框取消按钮背景色 -->
+    <color name="dialog_cancel_bg">#dfdcdc</color>
+
+    <!-- 对话框标题颜色 -->
+    <color name="dialog_title">#323232</color>
+
+    <color name="colorLoginEditText">#C7C7C7</color>
+    <color name="color_tab_bottom_text_unselected">#707075</color>
+    <color name="color_tab_bottom_text_selected">#1576ab</color>
+    <color name="tab_text_dark_line">#2E2D34</color>
+    <color name="tab_bg">#f8f8f8</color>
+    <color name="color_view_line">#05B0FF</color>
+    <color name="txt_login_hint">#ababac</color>
+    <color name="btn_bg_color">#05bbff</color>
+    <color name="txt_account_hint">#79797a</color>
+
+    <color name="colorCirclebg">#100000ff</color>
+    <color name="colorDescbText">#818183</color>
+</resources>

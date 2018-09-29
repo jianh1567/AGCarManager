@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="745px">
+
+    <ImageView
+        android:id="@+id/iv_car"
+        android:layout_width="734px"
+        android:layout_height="745px"
+        android:layout_marginLeft="13px"
+        android:src="@drawable/ic_car"/>
+
+    <com.wind.carmanager.widget.CirclePercentBar
+        android:id="@+id/pb_battery"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_toRightOf="@id/iv_car"
+        app:arcColor="@color/list_item_desc"
+        app:arcStartColor="@android:color/holo_red_dark"
+        app:arcWidth="10px"
+        app:centerTextColor="@color/white"
+        app:centerTextSize="61px"
+        app:circleRadius="145px"
+        app:descbTextColor="@color/colorDescbText"
+        app:descbTextSize="30px"/>
+
+    <RelativeLayout
+        android:id="@+id/pb_mileage"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_below="@id/pb_battery"
+        android:layout_marginTop="145px"
+        android:layout_toRightOf="@id/iv_car">
+
+        <TextView
+            android:id="@+id/total_mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="180km"
+            android:textColor="#ffffff"
+            android:textSize="61px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_mileage"
+            android:layout_centerHorizontal="true"
+            android:text="累计里程数"
+            android:textColor="#818183"
+            android:textSize="30px"/>
+
+    </RelativeLayout>
+
+    <!--<com.wind.carmanager.widget.CirclePercentBar
+        android:id="@+id/pb_mileage"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_toRightOf="@id/iv_car"
+        android:layout_below="@id/pb_battery"
+        android:layout_marginTop="145px"
+        app:arcWidth="10px"
+        app:circleRadius="145px"
+        app:centerTextSize="61px"
+        app:descbTextSize="18px"
+        app:arcColor="@color/list_item_desc"
+        app:centerTextColor="@color/white"
+        app:descbTextColor="@color/colorDescbText"
+        app:arcStartColor="@android:color/holo_blue_bright"/>-->
+
+</RelativeLayout>

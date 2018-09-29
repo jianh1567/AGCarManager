@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- tabItem -->
+    <declare-styleable name="TabItem">
+        <attr name="tabText" format="string" />
+        <attr name="tabImageUnSelected" format="integer" />
+        <attr name="tabImageSelected" format="integer" />
+        <attr name="tabTextColorUnSelected" format="color" />
+        <attr name="tabTextColorSelected" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchView">
+
+        <attr name="hasShadow" format="boolean" />
+
+        <attr name="primaryColor" format="color" />
+
+        <attr name="primaryColorDark" format="color" />
+
+        <attr name="isOpened" format="boolean" />
+
+    </declare-styleable>
+    
+     <declare-styleable name="CirclePercentBar">
+        <attr name="arcColor" format="color"/>
+        <attr name="arcWidth" format="dimension"/>
+        <attr name="centerTextColor" format="color"/>
+        <attr name="centerTextSize" format="dimension"/>
+        <attr name="circleRadius" format="dimension"/>
+        <attr name="arcStartColor" format="color"/>
+        <attr name="arcEndColor" format="color"/>
+        <attr name="descbTextColor" format="color"/>
+        <attr name="descbTextSize" format="dimension"/>
+    </declare-styleable>
+    
+</resources>

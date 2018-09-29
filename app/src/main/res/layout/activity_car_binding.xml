@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#222227"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="175px"
+        android:background="#2f2f35"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginLeft="17px"
+            android:background="@drawable/ic_left"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:text="@string/txt_car_binding"
+            android:textColor="#ffffff"
+            android:textSize="55px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="#25262c"
+            android:gravity="center_vertical"
+            android:paddingLeft="40px"
+            android:text="@string/txt_input_car_number"
+            android:textColor="#818182"
+            android:textSize="34px"/>
+
+        <EditText
+            android:id="@+id/et_car_number"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:layout_marginLeft="83px"
+            android:layout_marginRight="83px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/shape_binding_button"
+            android:paddingLeft="15px"
+            android:textColor="@color/white"
+            android:textSize="48px"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="154px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="30px"
+            android:background="@color/btn_bg_color"
+            android:paddingLeft="15px"
+            android:text="@string/txt_confirm_binding"
+            android:textColor="@color/white"
+            android:textSize="60px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_two"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="#25262c"
+            android:gravity="center_vertical"
+            android:paddingLeft="40px"
+            android:text="您当前绑定的车架号为:"
+            android:textColor="#818182"
+            android:textSize="34px"/>
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:layout_marginLeft="83px"
+            android:layout_marginRight="83px"
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:paddingLeft="15px"
+            android:textColor="@color/white"
+            android:textSize="52px"/>
+
+        <Button
+            android:id="@+id/btn_remove"
+            android:layout_width="match_parent"
+            android:layout_height="154px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="30px"
+            android:background="@color/btn_bg_color"
+            android:paddingLeft="15px"
+            android:text="解除绑定"
+            android:textColor="@color/white"
+            android:textSize="60px"/>
+    </LinearLayout>
+
+</LinearLayout>

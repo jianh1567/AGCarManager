@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/track_query"
+            android:icon="@mipmap/icon_track_query"
+            android:title="@string/track_query_title" />
+        <item
+            android:id="@+id/position_query"
+            android:icon="@mipmap/icon_bos"
+            android:title="@string/position_query" />
+        <item
+            android:id="@+id/fence"
+            android:icon="@mipmap/icon_fence"
+            android:title="@string/fence_title" />
+        <item
+            android:id="@+id/bluetooth_manage"
+            android:icon="@mipmap/icon_bluetooth"
+            android:title="@string/bluetooth_manage" />
+
+        <item
+            android:id="@+id/version_manage"
+            android:icon="@mipmap/icon_settings"
+            android:title="@string/version_manage" />
+
+        <item
+            android:id="@+id/help"
+            android:icon="@mipmap/icon_fag"
+            android:title="@string/help_title" />
+    </group>
+
+</menu>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#222227"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2f2f35"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_left"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_marginLeft="17px"
+                    android:background="@drawable/ic_left"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="@string/txt_msg_center"
+                    android:textColor="#ffffff"
+                    android:textSize="55px"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150px"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="140px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_today"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/txt_today"
+                        android:textColor="@color/white"
+                        android:textSize="50px"/>
+
+                    <TextView
+                        android:id="@+id/tv_seven_day"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/txt_seven_day"
+                        android:textColor="@color/txt_login_hint"
+                        android:textSize="50px"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                    <ImageView
+                        android:id="@+id/view_line"
+                        android:layout_width="10px"
+                        android:layout_height="6px"
+                        android:background="@color/color_view_line"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:id="@+id/trl_today"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#222227">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_today"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:id="@+id/trl_seven_today"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#222227"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_seven_today"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_today_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无数据"
+        android:visibility="gone"
+        android:textColor="#a9aaab"
+        android:textSize="56px"/>
+
+    <TextView
+        android:id="@+id/tv_seven_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无数据"
+        android:visibility="gone"
+        android:textColor="#a9aaab"
+        android:textSize="56px"/>
+
+    <TextView
+        android:id="@+id/tv_clean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="46px"
+        android:layout_marginRight="46px"
+        android:text="全部清空"
+        android:textColor="#a9aaab"
+        android:textSize="56px"/>
+
+</RelativeLayout>

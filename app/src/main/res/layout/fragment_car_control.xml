@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222227"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_top"></include>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="#25262c"
+        android:gravity="center_vertical"
+        android:paddingLeft="40px"
+        android:text="@string/txt_system_setting"
+        android:textColor="#818182"
+        android:textSize="34px"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text="@string/txt_flameout"
+            android:textColor="#aaaaab"
+            android:textSize="48px"/>
+
+        <com.wind.carmanager.widget.SwitchView
+            android:id="@+id/sv_flameout"
+            android:layout_width="170px"
+            android:layout_height="85px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:background="#343339"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text="@string/txt_report"
+            android:textColor="#aaaaab"
+            android:textSize="48px"/>
+
+        <com.wind.carmanager.widget.SwitchView
+            android:id="@+id/sv_report"
+            android:layout_width="170px"
+            android:layout_height="85px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="#25262c"
+        android:gravity="center_vertical"
+        android:paddingLeft="40px"
+        android:text="@string/txt_check_updata"
+        android:textColor="#818182"
+        android:textSize="34px"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_check_updata"
+        android:layout_width="match_parent"
+        android:layout_height="180px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text="检查更新版本"
+            android:textColor="#aaaaab"
+            android:textSize="48px"/>
+
+        <ImageView
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:background="@drawable/ic_right"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:background="#343339"/>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200px"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dialog_divide_line">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/car_status_image"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="54px"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="98px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/car_status_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5km/17分钟"
+                    android:textColor="#aaaaab"
+                    android:textSize="55px"/>
+
+                <TextView
+                    android:id="@+id/car_status_describe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="历史轨迹"
+                    android:textColor="#636265"
+                    android:textSize="30px"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
